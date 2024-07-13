@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../../component/navbar/navbar'
 import Footer from '../../component/footer'
-import Cosmetics from '../../component/cosmetics'
+import CanadianCosmetics from '../../component/cosmetics/canadian'
+import VeganCosmetics from '../../component/cosmetics/vegan'
 
 const CosmeticsPages = () => {
   return (
     <>
     <Navbar/>
-    <Cosmetics/>
+    <CanadianCosmetics/>
+    <VeganCosmetics/>
     <Footer/>
     </>
   )

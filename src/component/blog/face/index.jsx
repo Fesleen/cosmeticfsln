@@ -5,6 +5,7 @@ import PowderImages from "../../../images/blog/powend.png";
 import CreamImages from "../../../images/blog/cream.png";
 import { Link, useNavigate } from "react-router-dom";
 
+
 const BlogFace = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
