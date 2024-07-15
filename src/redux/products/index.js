@@ -3,14 +3,24 @@ import axios from 'axios';
 
 // Async thunk to fetch products
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-  const response = await axios.get('/api/products');
-  return response.data;
+  try {
+    const response = await axios.get('/api/products');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    throw error;
+  }
 });
 
 // Async thunk to fetch a product by ID
 export const fetchProductById = createAsyncThunk('products/fetchProductById', async (id) => {
-  const response = await axios.get(`/api/products/${id}`);
-  return response.data;
+  try {
+    const response = await axios.get(`/api/products/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Error fetching product with ID ${id}:`, error);
+    throw error;
+  }
 });
 
 const productsSlice = createSlice({
