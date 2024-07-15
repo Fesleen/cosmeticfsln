@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [state, setState] = useState({
     right: false,
   });
