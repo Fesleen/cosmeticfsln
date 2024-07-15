@@ -24,9 +24,8 @@ const BlogEyes = () => {
     navigate("/cosmetic");
   };
   return (
-    <div className="container mx-auto px-4 mt-28">
-      <hr className='bg-black border-black mb-20' style={{ height: '2px' }} />
-      <h1 className="text-black text-center text-xl sm:text-2xl md:text-3xl font-playfair font-medium mt-20 mb-28">Eyes</h1>
+    <div className="container mx-auto px-4 mt-8">
+      <h1 className="text-black text-center text-xl sm:text-2xl md:text-3xl font-playfair font-medium ">Eyes</h1>
       <div>
         {eyesData?.map((elem) => (
           <div key={elem.id} className="flex justify-around flex-wrap mt-20 mb-10">

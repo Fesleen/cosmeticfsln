@@ -27,8 +27,6 @@ const VeganCosmetics = () => {
 
   return (
     <div className="container py-10 px-10">
-      <h1 className="text-black text-center font-playfair text-2xl mb-20">Information about Cosmetics</h1>
-      <hr className='bg-black-500 h-2 pb-5' />
       <p className="text-black text-center font-playfair text-2xl mb-4 mt-10">Vegan Cosmetics</p>
       <div className="flex flex-wrap justify-around mb-10">
         {veganData?.map((elem) => (

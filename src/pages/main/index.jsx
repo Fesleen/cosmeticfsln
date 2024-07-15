@@ -1,18 +1,18 @@
 import React from 'react'
 import Footer from '../../component/footer'
 import MainAbout from '../../component/mainPage/about'
-import MainCosmetics from '../../component/mainPage/cosmetics'
-import MainBlog from '../../component/mainPage/blog'
 import MainNavbar from '../../component/navbar/mainNavbar'
+import CanadianCosmetics from '../../component/cosmetics/canadian'
+import BlogEyes from '../../component/blog/eye'
 
 const MainPages = () => {
   return (
     <>
-    <MainNavbar/>
-    <MainAbout/>
-    <MainCosmetics/>
-    <MainBlog/>
-    <Footer/>
+      <MainNavbar />
+      <MainAbout />
+      <CanadianCosmetics />
+      <BlogEyes />
+      <Footer />
     </>
   )
 }

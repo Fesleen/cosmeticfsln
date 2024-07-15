@@ -4,6 +4,7 @@ import { CanadianGet } from '../../../redux/cosmetics/canadian';
 import { useNavigate } from 'react-router-dom';
 
 const CanadianCosmetics = () => {
+  
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
@@ -16,13 +17,11 @@ const CanadianCosmetics = () => {
   const canadianData = canadian?.data?.filter((_, index) => index !== 1 && index !== 3).slice(0, expanded ? 8 : 3);
 
   const handleNavigate = (elemId) => {
-    console.log(elemId);
-    navigate(`/product-page/${elemId}`); // Navigate to '/product/:id' route
+    navigate(`/product-page/${elemId}`); // Navigate to '/product-page/:id' route
   };
 
   const handleExpand = () => {
     setExpanded(true);
-    
   };
 
   return (
